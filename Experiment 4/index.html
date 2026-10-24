@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- we give that value in for(label) which we give in id -->
+    <!-- fieldset is used to make box around the objects -->
+    <fieldset>
+        <legend>Bio Data</legend>
+        <form action="./response.html">
+            <lable for="name">Name :</lable>
+            <input type="text" size="20" placeholder="enter your name" name="name" required id="name"><br><br>
+            <label for="passwd">Password :</label><input type="password" name="passwd"
+                placeholder="enter your password"><br><br>
+            <label for="email">Email :</label><input type="email" placeholder="enter your  email" required>
+            <br><br>Gender:
+            <label for="male">Male</label><input type="radio" name="gender" id="male"></input>
+            <label for="female">Female</label><input type="radio" name="gender" id="female"></input><br><br>
+
+            <label for="hobb">Hobbies :</label>
+            <label for="hob1">Cricket</label><input type="checkbox" name="check1">
+            <label for="hob2">Football</label><input type="checkbox" name="check2">
+            <label for="hob3">Badminton</label><input type="checkbox" name="check3"><br><br>
+            Languages:
+            <select>
+                <option value="c">C</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C++">C++</option>
+                <option value="javascript">javascript</option>
+            </select>
+            <br><br>D.O.B
+            <input type="date">
+            <br><br>
+            Enter your Url:<input type="URL" name="url" required>
+
+            <br><br>
+            <label for="file">Resume :</label><input type="file" name="file" id="file">
+            <br><br>
+            <label for="attempt">Attempt :</label><input type="attempt" name="attempt" id="attempt">
+
+<!-- required attribute is given when we want any file to be compulsory -->
+ <br><br>
+ <button>Submit</button>
+ <button>Reset</button>
+
+
+    </fieldset>
+    </form>
+</body>
+
+</html>
